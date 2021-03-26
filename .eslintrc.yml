@@ -1,0 +1,6 @@
+env:
+  commonjs: true
+extends:
+  - standard
+parserOptions:
+  ecmaVersion: 12

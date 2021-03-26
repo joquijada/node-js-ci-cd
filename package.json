@@ -1,0 +1,34 @@
+{
+  "name": "@exsoinn/node-js-ci-cd",
+  "version": "1.0.0",
+  "description": "Shareable CI/CD configuration for Node.js apps",
+  "files": [
+    ".script/*"
+  ],
+  "main": "index.js",
+  "bin": {
+    "release": "./.script/release.sh",
+    "release-dry-run": "./.script/release-dry-run.sh"
+  },
+  "scripts": {
+    "release": "semantic-release --no-ci",
+    "release:dry-run": "semantic-release --no-ci --dry-run"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "semantic-release",
+    "ci",
+    "cd"
+  ],
+  "author": "Jose Quijada",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/exec": "^5.0.0",
+    "@semantic-release/git": "^9.0.0",
+    "semantic-release": "^17.4.2"
+  }
+}
