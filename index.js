@@ -28,7 +28,8 @@ module.exports = {
     '@semantic-release/npm',
     '@semantic-release/git'
   ],
-  //publish: false,
-  success: false, // TODO: Slack to notify of success or failure, see if there's a NPM package for that already
+  // TODO: Slack to notify of success or failure, see if there's a NPM semantic release plugin
+  //  for that already that implements this step
+  success: false,
   fail: false
 }
